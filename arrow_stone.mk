@@ -11,8 +11,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile
 $(call inherit-product, device/xiaomi/stone/device.mk)
 
-# Inherit some common Rising stuff
-$(call inherit-product, vendor/rising/config/rising.mk)
+# Inherit some common Arrow stuff
+$(call inherit-product, vendor/arrow/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Google - GMS
@@ -21,7 +21,7 @@ TARGET_CORE_GMS := true
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := stone
-PRODUCT_NAME := rising_stone
+PRODUCT_NAME := arrow_stone
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := 22071219CG
 PRODUCT_MANUFACTURER := Xiaomi
@@ -30,4 +30,5 @@ BUILD_FINGERPRINT :=POCO/stone_p_global/stone:13/TP1A.220624.014/V14.0.8.0.TLUMI
 PRIVATE_BUILD_DESC="stone_p_global-user 13 TP1A.220624.014 V14.0.8.0.TLUMIXM release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-RISING_MAINTAINER := "Rafi_x"
+
+-include vendor/arrow/signing/keyskeys.mk

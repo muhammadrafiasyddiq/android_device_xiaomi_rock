@@ -18,7 +18,7 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_stone.mk \
     $(LOCAL_DIR)/aosp_stone.mk \
-    $(LOCAL_DIR)/rising_stone.mk
+    $(LOCAL_DIR)/arrow_stone.mk
 
 COMMON_LUNCH_CHOICES := \
     lineage_stone-user \
@@ -27,6 +27,6 @@ COMMON_LUNCH_CHOICES := \
     aosp_stone-user \
     aosp_stone-userdebug \
     aosp_stone-eng \
-    rising_stone-user \
-    rising_stone-userdebug \
-    rising_stone-eng \
+    arrow_stone-user \
+    arrow_stone-userdebug \
+    arrow_stone-eng \
